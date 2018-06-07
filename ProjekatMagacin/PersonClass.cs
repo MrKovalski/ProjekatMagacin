@@ -18,6 +18,8 @@ namespace ProjekatMagacin
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
+        
+        //fdfgd
 
         private int id;
 
