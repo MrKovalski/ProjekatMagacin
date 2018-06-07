@@ -1,0 +1,17 @@
+﻿<Window x:Class="ProjekatMagacin.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatMagacin"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label Content="Magacion master" HorizontalAlignment="Left" Margin="51.678,33.508,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Verzija 0.1" HorizontalAlignment="Left" Margin="51.678,69.788,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="©Filip Ilic" HorizontalAlignment="Left" Margin="51.678,106.068,0,0" VerticalAlignment="Top"/>
+        <Label Content="All rights reserved." HorizontalAlignment="Left" Margin="51.678,132.028,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="ProjekatMagacin.Pregled"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatMagacin"
+        mc:Ignorable="d"
+        Title="Pregled" Height="450" Width="800">
+    <Grid Margin="0,0,-0.4,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="325*"/>
+            <RowDefinition Height="42*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="190*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="422*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid 
+            AutoGenerateColumns="True"
+            Name="gridPeople" 
+            HorizontalAlignment="Left" 
+            Height="295" 
+            Margin="7.8,28.6,0,0" 
+            VerticalAlignment="Top" 
+            Width="458"
+            ItemsSource="{Binding}" IsReadOnly="True" ColumnWidth="*"  Initialized="gridPeople_Initialized"
+              SelectedItem="{Binding Path=Person, Mode=TwoWay}" Grid.ColumnSpan="4" Grid.Row="1" Grid.Column="1"/>
+
+        <Button Content="Insert" Height="30" HorizontalAlignment="Left" Margin="7.8,25,0,0" Name="InsertButton" VerticalAlignment="Top" Width="110" Click="button1_Click" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Button Content="Update" Height="30" HorizontalAlignment="Right" Margin="0,25,0.4,0" Name="buttonUpdate" VerticalAlignment="Top" Width="110" Click="buttonUpdate_Click" Grid.Column="2" Grid.RowSpan="2" />
+        <Button Content="Delete" Height="30" HorizontalAlignment="Left" Margin="1,25,0,0" Name="buttonDelete" VerticalAlignment="Top" Width="110" Click="buttonDelete_Click" Grid.Column="4" Grid.RowSpan="2" />
+
+
+    </Grid>
+</Window>
