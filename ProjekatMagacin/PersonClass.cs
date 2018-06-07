@@ -20,7 +20,7 @@ namespace ProjekatMagacin
         }
         
         //fdfgd
-
+        //tytdvdlknlkn
         private int id;
 
         public int Id
