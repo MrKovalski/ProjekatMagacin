@@ -11,24 +11,25 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using MahApps.Metro;
+using MahApps.Metro.Controls;
 
 namespace ProjekatMagacin
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+   
+    public partial class MainWindow : MetroWindow
     {
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void ButtonClicked(object sender, RoutedEventArgs e)
+        
+
+        private void opnUnos(object sender, RoutedEventArgs e)
         {
-            Pregled preg = new Pregled();
-            preg.Show();
+            Unos unos = new Unos();
+            unos.Show();
         }
 
         private void opnPomoc(object sender, RoutedEventArgs e)
@@ -43,8 +44,11 @@ namespace ProjekatMagacin
             abt.Show();
         }
 
-   
-        
+       
+
+
+
+
 
 
     }

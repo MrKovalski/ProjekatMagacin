@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +13,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
 
 namespace ProjekatMagacin
 {
-    /// <summary>
-    /// Interaction logic for About.xaml
-    /// </summary>
-    public partial class About : MetroWindow
+
+    public partial class Unos : Window
     {
-        public About()
+
+        public Unos()
         {
             InitializeComponent();
+
         }
+
     }
 }

@@ -1,44 +1,28 @@
-﻿<Window x:Class="ProjekatMagacin.MainWindow"
+﻿<Controls:MetroWindow x:Class="ProjekatMagacin.MainWindow"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ProjekatMagacin"
-        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Magacin Master" 
         Height="800"
         Width="1200"
-     
-        Background="#FF366AB6">
+     >
     
-    <Window.Effect>
-        <DropShadowEffect ShadowDepth="1"/>
-    </Window.Effect>
+   
     
     <Grid>
-        <Menu Margin="0,0,0,0" Background="#FFFFFDFD" VerticalAlignment="Top" VerticalContentAlignment="Top">
+        <Menu x:Name="pocetnimeni" Margin="0,0,0,0" Background="#FFFFFDFD" VerticalAlignment="Top" VerticalContentAlignment="Top">
             <MenuItem Header="Skladište">
-                <MenuItem Header="Unos Robe"></MenuItem>
-                <MenuItem Header="Iznos Robe "></MenuItem>
-                    <MenuItem Header="Kategorije">
-                    <MenuItem Header="Bela tehnika"></MenuItem>
-                    <MenuItem Header="Biciklovi"></MenuItem>
-                    <MenuItem Header="Peći"></MenuItem>
-                    <MenuItem Header="Kućni aparati"></MenuItem>
-                    <MenuItem Header="Potrošarka elekronika"></MenuItem>
-                </MenuItem>
                 <MenuItem Header="Organizovanje">
-                    <MenuItem Header="Uredi Kategorije"></MenuItem>
-                    <MenuItem Header="Razmesti Robu"></MenuItem>
                     <MenuItem Header="Uredi Objekte"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Transport">
-                    <MenuItem Header="Nove Otpremnice"></MenuItem>
-                    <MenuItem Header="Istorija Otpremnica"></MenuItem>
+                    <MenuItem Header="Unos Robe" Click="opnUnos"></MenuItem>
+                    <MenuItem Header="Iznos Robe"></MenuItem>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Računovođstvo">
-                <MenuItem Header="Pregled zaposlenih" Click="ButtonClicked"></MenuItem>
+               
             </MenuItem>
             <MenuItem Header="Komercijala">
                 <MenuItem Header="Pregled Lagera"></MenuItem>
@@ -51,11 +35,13 @@
             </MenuItem>
             <MenuItem Header="Pomoć">
                 <MenuItem Header="Pomoć" Click="opnPomoc"/>
+                <MenuItem Header="Podesavanja" Click=""/>
                 <MenuItem Header="O programu" Click="opnAbout"/>
                 
-               
+
+
             </MenuItem>
 
         </Menu>
     </Grid>
-</Window>
+</Controls:MetroWindow>
