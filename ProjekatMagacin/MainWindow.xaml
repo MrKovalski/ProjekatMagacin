@@ -7,6 +7,10 @@
         Height="800"
         Width="1200"
      >
+
+    <Window.Background>
+        <ImageBrush ImageSource="images/background.jpg" Opacity="0.2"/>
+    </Window.Background>
     
    
     
@@ -35,7 +39,7 @@
             </MenuItem>
             <MenuItem Header="Pomoć">
                 <MenuItem Header="Pomoć" Click="opnPomoc"/>
-                <MenuItem Header="Podesavanja" Click=""/>
+                <MenuItem Header="Podesavanja" />
                 <MenuItem Header="O programu" Click="opnAbout"/>
                 
 

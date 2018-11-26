@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace ProjekatMagacin
 {
@@ -26,49 +27,27 @@ namespace ProjekatMagacin
         {
             InitializeComponent();
         }
-        /*
-        private void btnSubmit(object sender, RoutedEventArgs e)
-        {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=localhost; Initial Catalog=login_db; Integrated Security=True;");
-            try
-            {
-                if (sqlCon.State == ConnectionState.Closed)
-                    sqlCon.Open();
-                String query = "SELECT COUNT(1) FROM Users WHERE Username=@Username AND Password=@Password";
-                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
-                sqlCmd.CommandType = CommandType.Text;
-                sqlCmd.Parameters.AddWithValue("@Username", txtUser.Text);
-                sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-                int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
-                if (count == 1)
-                {
-                    MainWindow dashboard = new MainWindow();
-                    dashboard.Show();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Username or password is incorrect.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlCon.Close();
-            }
 
+        private void closeThis(object sender, RoutedEventArgs a)
+        {
+            this.Close();
         }
-        */
+        
+        
 
         private void opnMain(object sender, RoutedEventArgs e)
         {
-
-            MainWindow main = new MainWindow();
-            main.Show();
-            this.Close();
+            if(txtU.Text == "admin" && txtP.Password == "admin")
+            {
+                MainWindow main = new MainWindow();
+                main.Show();
+                this.Close();
+            }
+            else
+            {
+             this.ShowMessageAsync("Upps", "Uneli ste pogrešne podatke.");
+            }
+            
         }
         
     }
