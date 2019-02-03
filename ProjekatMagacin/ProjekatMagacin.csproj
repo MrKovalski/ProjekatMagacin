@@ -67,15 +67,22 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DBConnection.cs" />
+    <Compile Include="KalkulatorM.xaml.cs">
+      <DependentUpon>KalkulatorM.xaml</DependentUpon>
+    </Compile>
     <Compile Include="login.xaml.cs">
       <DependentUpon>login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Unos.xaml.cs">
-      <DependentUpon>Unos.xaml</DependentUpon>
+    <Compile Include="Transport.xaml.cs">
+      <DependentUpon>Transport.xaml</DependentUpon>
     </Compile>
     <Page Include="About.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KalkulatorM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="login.xaml">
       <SubType>Designer</SubType>
@@ -108,7 +115,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Unos.xaml">
+    <Page Include="Transport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,7 +161,7 @@
     <Resource Include="main.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\background.jpg" />
+    <Resource Include="Images\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

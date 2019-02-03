@@ -6,5 +6,5 @@
         xmlns:local="clr-namespace:ProjekatMagacin"
         mc:Ignorable="d"
         Title="Pomoćni meni" Height="450" Width="800">
-   
+    <TextBox HorizontalAlignment="Left" Height="132" Margin="215,139,0,0" TextWrapping="Wrap" Text="Za pomoć posetiti www.filipilic.com/projekti/mm/doc" VerticalAlignment="Top" Width="311" TextChanged="TextBox_TextChanged"/>
 </Window>

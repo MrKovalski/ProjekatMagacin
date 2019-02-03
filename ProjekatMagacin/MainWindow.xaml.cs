@@ -22,15 +22,13 @@ namespace ProjekatMagacin
         public MainWindow()
         {
             InitializeComponent();
+
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
 
         
 
-        private void opnUnos(object sender, RoutedEventArgs e)
-        {
-            Unos unos = new Unos();
-            unos.Show();
-        }
+        
 
         private void opnPomoc(object sender, RoutedEventArgs e)
         {
@@ -44,7 +42,15 @@ namespace ProjekatMagacin
             abt.Show();
         }
 
-       
+        private void opnKalk(object sender, RoutedEventArgs e)
+        {
+            KalkulatorM cal = new KalkulatorM();
+            cal.Show();
+        }
+
+
+
+
 
 
 

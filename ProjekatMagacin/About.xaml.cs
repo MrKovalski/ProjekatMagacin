@@ -23,6 +23,8 @@ namespace ProjekatMagacin
         public About()
         {
             InitializeComponent();
+
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
     }
 }

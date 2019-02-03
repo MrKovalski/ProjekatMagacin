@@ -5,7 +5,9 @@
                       WindowStartupLocation="CenterScreen"
                       Title="Prijava u MM"
                       Height="250"
-                      Width="320">
+                      Width="320"
+                      KeyDown="Window_KeyDown">
+    
     <Grid>
         <Button Content="Odustani" Click="closeThis" HorizontalAlignment="Left" Margin="53,168,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Prijava" Name="Submit" Click="opnMain" HorizontalAlignment="Left" Margin="179,168,0,0" VerticalAlignment="Top" Width="75"/>
@@ -14,6 +16,7 @@
         <TextBox Name="txtU"  HorizontalAlignment="Left" Height="23" Margin="124,39,0,0" VerticalAlignment="Top"  Width="120"/>
         <PasswordBox Name="txtP" HorizontalAlignment="Left" Height="23" Margin="124,92,0,0"   VerticalAlignment="Top" Width="120"/>
 
+        
 
 
     </Grid>

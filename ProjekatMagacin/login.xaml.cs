@@ -25,19 +25,20 @@ namespace ProjekatMagacin
     {
         public login()
         {
-            
+            InitializeComponent();
+            txtU.Focus();
         }
 
         private void closeThis(object sender, RoutedEventArgs a)
         {
             this.Close();
         }
-        
-        
+
+
 
         private void opnMain(object sender, RoutedEventArgs e)
         {
-            if(txtU.Text == "admin" && txtP.Password == "admin")
+            if (txtU.Text == "admin" && txtP.Password == "admin")
             {
                 MainWindow main = new MainWindow();
                 main.Show();
@@ -45,10 +46,27 @@ namespace ProjekatMagacin
             }
             else
             {
-             this.ShowMessageAsync("Upps", "Uneli ste pogrešne podatke.");
+                this.ShowMessageAsync("Upps", "Uneli ste pogrešne podatke.");
             }
-            
+
         }
-        
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Test for Enter key.
+            if (e.Key == Key.Enter)
+            {
+                if (txtU.Text == "admin" && txtP.Password == "admin")
+                {
+                    MainWindow main = new MainWindow();
+                    main.Show();
+                    this.Close();
+                }
+                else
+                {
+                    this.ShowMessageAsync("Upps", "Uneli ste pogrešne podatke.");
+                }
+            }
+        }
     }
 }

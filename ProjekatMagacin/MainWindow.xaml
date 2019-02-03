@@ -9,33 +9,24 @@
      >
 
     <Window.Background>
-        <ImageBrush ImageSource="images/background.jpg" Opacity="0.2"/>
+        <ImageBrush ImageSource="images/background.png" Opacity="0.2"/>
     </Window.Background>
     
    
     
     <Grid>
         <Menu x:Name="pocetnimeni" Margin="0,0,0,0" Background="#FFFFFDFD" VerticalAlignment="Top" VerticalContentAlignment="Top">
-            <MenuItem Header="Skladište">
-                <MenuItem Header="Organizovanje">
-                    <MenuItem Header="Uredi Objekte"></MenuItem>
-                </MenuItem>
-                <MenuItem Header="Transport">
-                    <MenuItem Header="Unos Robe" Click="opnUnos"></MenuItem>
-                    <MenuItem Header="Iznos Robe"></MenuItem>
-                </MenuItem>
+            <MenuItem Header="Transport">
+               
             </MenuItem>
-            <MenuItem Header="Računovođstvo">
+            <MenuItem Header="Računovođstvo" IsEnabled="False">
                
             </MenuItem>
             <MenuItem Header="Komercijala">
-                <MenuItem Header="Pregled Lagera"></MenuItem>
-                <MenuItem Header="Lista za nabavku"></MenuItem>
-                <MenuItem Header="Lista za servis"></MenuItem>
-                <MenuItem Header="Uređivanje robe">
-                    <MenuItem Header="Uredi Kategorije"></MenuItem>
-                    <MenuItem Header="Uredi proizvode"></MenuItem>
-                </MenuItem>
+                <MenuItem Header="Kalkulator Marže" Click="opnKalk" ></MenuItem>
+                <MenuItem Header="Lista za nabavku" IsEnabled="False"></MenuItem>
+                <MenuItem Header="Lista za servis" IsEnabled="False"></MenuItem>
+                <MenuItem Header="Uređivanje robe"></MenuItem>
             </MenuItem>
             <MenuItem Header="Pomoć">
                 <MenuItem Header="Pomoć" Click="opnPomoc"/>
