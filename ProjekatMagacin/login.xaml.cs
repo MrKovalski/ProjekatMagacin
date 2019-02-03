@@ -25,7 +25,7 @@ namespace ProjekatMagacin
     {
         public login()
         {
-            InitializeComponent();
+            
         }
 
         private void closeThis(object sender, RoutedEventArgs a)

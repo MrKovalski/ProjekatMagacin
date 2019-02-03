@@ -14,10 +14,6 @@
         <TextBox Name="txtU"  HorizontalAlignment="Left" Height="23" Margin="124,39,0,0" VerticalAlignment="Top"  Width="120"/>
         <PasswordBox Name="txtP" HorizontalAlignment="Left" Height="23" Margin="124,92,0,0"   VerticalAlignment="Top" Width="120"/>
 
-        <Window.InputBindings>
-            <KeyBinding Command="{Binding MyCommand}"
-              Gesture="ENTER" />
-        </Window.InputBindings>
 
 
     </Grid>
