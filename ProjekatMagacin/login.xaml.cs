@@ -46,7 +46,9 @@ namespace ProjekatMagacin
             }
             else
             {
-                this.ShowMessageAsync("Upps", "Uneli ste pogrešne podatke.");
+                MainWindow main = new MainWindow();
+                main.Show();
+                //this.ShowMessageAsync("Upps", "Uneli ste pogrešne podatke.");
             }
 
         }

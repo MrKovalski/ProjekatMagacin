@@ -13,14 +13,10 @@ namespace ProjekatMagacin
         {
             InitializeComponent();
 
-            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-
-
-        }
-
-        private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen; 
 
         }
+
+        
     }
 }
